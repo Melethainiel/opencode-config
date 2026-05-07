@@ -4,9 +4,9 @@ Shared OpenCode commands, skills, and rules synced across devices.
 
 ## Install
 
-**Linux / macOS:**
+**Linux / macOS (one-liner):**
 ```bash
-git clone git@github.com:Melethainiel/opencode-config.git ~/.opencode-config && ~/.opencode-config/install.sh
+curl -fsSL https://raw.githubusercontent.com/Melethainiel/opencode-config/master/install.sh | bash
 ```
 
 **Windows (PowerShell):**
@@ -15,11 +15,11 @@ git clone git@github.com:Melethainiel/opencode-config.git "$env:USERPROFILE\.ope
 & "$env:USERPROFILE\.opencode-config\install.ps1"
 ```
 
-**Update (all platforms):**
+**Update:**
 ```bash
-cd ~/.opencode-config && git pull
+curl -fsSL https://raw.githubusercontent.com/Melethainiel/opencode-config/master/install.sh | bash
 ```
-Symlinks are already in place, so a pull is all you need.
+Re-running the installer pulls the latest and re-links.
 
 ## Structure
 
