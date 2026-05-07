@@ -6,18 +6,20 @@ Shared OpenCode commands, skills, and rules synced across devices.
 
 **Linux / macOS:**
 ```bash
-git clone git@github.com:<your-user>/opencode-config.git ~/.opencode-config
-cd ~/.opencode-config
-chmod +x install.sh
-./install.sh
+git clone git@github.com:Melethainiel/opencode-config.git ~/.opencode-config && ~/.opencode-config/install.sh
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone git@github.com:<your-user>/opencode-config.git "$env:USERPROFILE\.opencode-config"
-cd "$env:USERPROFILE\.opencode-config"
-.\install.ps1
+git clone git@github.com:Melethainiel/opencode-config.git "$env:USERPROFILE\.opencode-config"
+& "$env:USERPROFILE\.opencode-config\install.ps1"
 ```
+
+**Update (all platforms):**
+```bash
+cd ~/.opencode-config && git pull
+```
+Symlinks are already in place, so a pull is all you need.
 
 ## Structure
 
@@ -31,4 +33,4 @@ install.ps1     # Windows installer
 
 ## Adding new commands
 
-Drop a `.md` file in `commands/`, commit, push, and run `install.sh` on your other devices (or just `git pull` if symlinks are already set up).
+Drop a `.md` file in `commands/`, commit, push. Other devices just need `git pull`.
